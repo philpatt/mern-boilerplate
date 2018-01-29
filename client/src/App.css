@@ -34,10 +34,23 @@ nav a:hover {
   border: none;
   padding: 5px 10px;
   margin-top: 10px;
-  width: 50px;
+
 }
 .btn:hover{
   background-color: #99f;
+}
+.error {
+  background-color: pink;
+  color: red;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 10px 10px;
+  width: 75%;
+}
+.no-flash {
+  visibility: hidden;
+  padding: 10px 10px;
+  width: 75%;
 }
 
 /*Default styles*/

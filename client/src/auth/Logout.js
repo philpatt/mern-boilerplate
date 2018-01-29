@@ -6,9 +6,9 @@ class Logout extends Component {
 	handleLogout = (e) => {
 		e.preventDefaul();
 		//TODO: delete token from local storage
+		localStorage.removeItem('mernToken');
 		//TODO: Go back to home page
-		console.log('Logout function was called!');
-
+		this.props.updateUser();
 	}
 	render(){
 		return (<Link to='/' onClick={this.handleLogout}>Logout</Link>);
